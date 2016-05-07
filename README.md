@@ -1,2 +1,2 @@
 # tl-sms
-Get simply your bus/underground tickets easily in Lausanne.
+Get simply your bus/underground tickets in Lausanne.
