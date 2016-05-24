@@ -1,0 +1,44 @@
+<!-- Copyright 2016 Joël Jungo <j.jungo@gmail.com>
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. -->
+
+<ion-view view-title="Tarifs">
+    <ion-content class="padding">
+
+        <div class="padding">
+
+            <center>
+                <h2>
+                    <b>{{order.ticket.name}}</b>
+                </h2>
+
+                <button  ng-show="!order.isSpecial" class="button button-large button-dark" ng-click="onClickOrder(true, input)">
+                    Plein tarif
+                </button>
+                <button ng-show="!order.isSpecial" class="button button-large button-dark" ng-click="onClickOrder(false, input)">
+                    Tarif réduit
+                </button>
+                <button  ng-show="order.isSpecial" class="button button-large button-dark" ng-click="onClickOrder(true, input)">
+                    Tarif unique
+                </button>
+                <div class="padding" ng-show="order.ticket.needZone">
+                    <label class="item item-input">
+                        <input id="zones" name="zones" ng-model="input.zones" class="big-input" type="tel" placeholder="Ajoutez 1 zone">
+                    </label>
+                </div>
+            </center>
+
+        </div>
+
+    </ion-content>
+</ion-view>

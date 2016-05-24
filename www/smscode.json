@@ -1,0 +1,82 @@
+{
+    "cities": [{
+        "city": "Lausanne",
+        "company": "TL",
+        "number": "456",
+
+        "sms_codes": {
+            "special": [{
+                "name": "Supplément Pyjama",
+                "code": "PYJTL",
+                "price": "4.00",
+                "needZone": false
+            }],
+            "normal": [{
+                "name": "Grand Lausanne (11 et 12)",
+                "needZone": false,
+                "Plein": {
+                    "name": "Grand Lausanne (11 et 12)",
+                    "code": "GL",
+                    "price": "3.60"
+                },
+                "Reduit": {
+                    "name": "Grand Lausanne (11 et 12) réduit",
+                    "code": "GLR",
+                    "price": "2.40"
+                }
+            }, {
+                "name": "GL + une zone",
+                "needZone": true,
+                "Plein": {
+                    "name": "GL + une zone",
+                    "code": "GL,",
+                    "price": "5.40"
+                },
+                "Reduit": {
+                    "name": "GL + une zone réduit",
+                    "code": "GL,R",
+                    "price": "2.70"
+                }
+            }, {
+                "name": "Deux zones (12 + une zone)",
+                "needZone": true,
+                "Plein": {
+                    "name": "Deux zones (12 + une zone)",
+                    "code": "12,",
+                    "price": "3.60"
+                },
+                "Reduit": {
+                    "name": "Deux zones (12 + une zone) réduit",
+                    "code": "12,R",
+                    "price": "2.40"
+                }
+            }, {
+                "name": "Carte journ. GL (11 et 12)",
+                "needZone": false,
+                "Plein": {
+                    "name": "Carte journ. GL (11 et 12)",
+                    "code": "JGL",
+                    "price": "9.00"
+                },
+                "Reduit": {
+                    "name": "Carte journ. GL (11 et 12) réduit",
+                    "code": "JGLR",
+                    "price": "6.90"
+                }
+            }, {
+                "name": "Carte journ. + une zone",
+                "needZone": true,
+                "Plein": {
+                    "name": "Carte journ. + une zone",
+                    "code": "J12,",
+                    "price": "9.00"
+                },
+                "Reduit": {
+                    "name": "Carte journ. + une zone réduit",
+                    "code": "J12,R",
+                    "price": "6.90"
+                }
+            }]
+        }
+    }]
+}
